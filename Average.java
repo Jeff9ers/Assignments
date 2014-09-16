@@ -8,22 +8,46 @@ public class Average
 {
 public static void main(String[] args) 
 {
-int val1, val2, val3;
+int test1, test2;
 double average;
 double sum;
 Scanner scan = new Scanner(System.in) ;
 // get three values from user
-   System.out.println("Please enter three integers and " + "I will compute their average");
-   val1 = scan.nextInt();
-   val2 = scan.nextInt();
-   val3 = scan.nextInt();
+   System.out.println("Please enter two test scores and " + "I will compute their average");
+   test1 = scan.nextInt();
+   test2 = scan.nextInt();
+   
   
 //compute the average
-   sum =  (val1 + val2 + val3);
-   System.out.println ("Sum of all data points is " + sum );
-   average = (sum / 3);
+   sum =  (test1 + test2 );
+   System.out.println ("Sum of all test scores " + sum );
+   average = (sum / 2);
 //print the average
-   System.out.println ("Average equals " + average);
+   System.out.println ("Test average equals " + average);
+//set quiz values
+  int quiz1, quiz2, quiz3;
+  double average1;
+  double sum1;
+  Scanner scan1 = new Scanner(System.in);
+  System.out.println("Please enter your three quiz scores and " + " I will compute their average");
+  quiz1 = scan1.nextInt();
+  quiz2 = scan1.nextInt();
+  quiz3 = scan1.nextInt();
+// Compute the average
+  sum1 = (quiz1 + quiz2 + quiz3 );
+  System.out.println ("Sum of all quiz scores" + sum1 );
+  average1 = (sum1 / 3);
+//print the average1
+  System.out.println ("Quiz average equals " + average1);
+//Enter HW average
+  int hw;
+  double average2;
+  double sum2;
+  Scanner scan2 = new Scanner(System.in) ;
+  System.out.println ("Please enter your homework average" + " I will compute your weighted average");
+  hw = scan2.nextInt();
+  
+  
 
-} 
+    } 
 }
